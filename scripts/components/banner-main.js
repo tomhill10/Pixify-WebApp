@@ -3,6 +3,7 @@ import { getRandomNumber } from "../functions/functions.js";
 function banner() {
   const banner = document.createElement("div");
   banner.className = `image-container`;
+  banner.id = `image-container`;
   banner.innerHTML = ` <img src="https://picsum.photos/seed/${getRandomNumber()}/1920/1080" alt="picture" />
      <div class="pop-up">
        <img
@@ -10,7 +11,7 @@ function banner() {
          alt=""
        />
      </div>
-     <button class="submitButton" id="submitButton">
+     <button class="submitButton subPage" id="submitButton">
        <img src="./svg/SUBMIT NOW.svg" alt="submit" />
      </button>
 `;
