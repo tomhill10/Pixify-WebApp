@@ -34,7 +34,7 @@
 }
 
 .subCard {
-  background-color: white;
+  background-color: var(--color-text-secondary);
   width: 25vw;
   height: calc(25vw - 5vw);
   gap: 20px;
@@ -71,7 +71,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.subCard-info-row > p:first-of-type {
   color: var(--color-text-main);
+}
+
+.subCard-view-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  color: var(--color-text-main);
+}
+
+.subCard-view-container:hover {
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .form-container {

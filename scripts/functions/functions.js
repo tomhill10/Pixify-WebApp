@@ -1,5 +1,5 @@
 function getRandomNumber() {
-  let randomNumber = Math.floor(Math.random() * 2000);
+  let randomNumber = Math.floor(Math.random() * 100);
   return randomNumber;
 }
 

@@ -18,7 +18,6 @@ function app() {
   app.innerHTML = banner();
   app.innerHTML = subPage(pictures);
   app.innerHTML = form();
-  body.appendChild(app);
 }
 
 app();
