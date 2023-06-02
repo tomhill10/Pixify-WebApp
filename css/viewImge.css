@@ -1,25 +1,35 @@
 .view-image-container {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 50%);
+  height: calc(100vh - 60px);
+  margin-top: 60px;
+  background-color: whitesmoke;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3vh;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
-.image-row-wrapper {
+.view-image-container > h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+}
+
+.view-image-container .image-row-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
-.image-row-wrapper > img {
+.view-image-container > img {
   width: auto;
   height: 70vh;
   max-width: 70vw;
@@ -29,56 +39,24 @@
 .image-row-wrapper > button {
   border: none;
   background-color: unset;
-  color: white;
+  color: var(--color-secondary);
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--color-background);
+  border-radius: 30px;
+  padding: 5px 20px;
 }
 
 .image-row-wrapper > button:hover {
-  font-weight: 600;
   cursor: pointer;
-}
-
-.view-image-container > button {
-  border: none;
-  background-color: unset;
   color: white;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.view-image-container > button:hover {
-  font-weight: 600;
-  cursor: pointer;
-}
-
-#buttonPrev {
-  position: relative;
-  background-color: black;
-  margin: 20px;
-  height: 10vh;
-}
-
-#buttonNext {
-  position: relative;
-  background-color: black;
-  margin: 20px;
-  height: 10vh;
-  position: relative;
 }
 
 /* #buttonNext:hover {

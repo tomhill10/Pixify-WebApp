@@ -33,16 +33,19 @@ async function subCard(inner) {
   for (const buttons of buttonOpen) {
     buttons.addEventListener("click", function () {
       let j = buttons.id;
-      console.log("button press");
       const div = document.createElement("div");
       div.className = "view-image-container";
       div.id = "image-container";
       div.innerHTML = `
-      <button class="view-image-close-button" id="buttonClose">CLOSE X</button>
+      <h1 class="image-view-h1">Photographer: ${data[j].author}</h1>
+      <img src="${
+        data[j].download_url
+      }" alt="Picture zoomed in" class="view-image-big" id="image-viewer-img"/>
+      <p class="pageCount" id="pageCount">Page ${j + 1} of ${data.length}</p>
       <div class="image-row-wrapper">
-      <button class="prev-image" id="buttonPrev"><i class="fa-solid fa-caret-down fa-rotate-90" style="color: #ffffff;"></i></button>
-      <img src="${data[j].download_url}" alt="Picture zoomed in" class="view-image-big" id="image-viewer-img"/>
-      <button class="next-image" id="buttonNext"><i class="fa-solid fa-caret-down fa-rotate-270" style="color: #ffffff;"></i></button>
+      <button class="prev-image" id="buttonPrev">PREV</button>
+      <button class="view-image-close-button" id="buttonClose">CLOSE</button>
+      <button class="next-image" id="buttonNext">NEXT</button>
       </div>
       `;
       document.body.appendChild(div);
@@ -50,15 +53,19 @@ async function subCard(inner) {
       const buttonNext = document.getElementById("buttonNext");
       buttonNext.addEventListener("click", function () {
         const img = document.getElementById("image-viewer-img");
+        const page = document.getElementById("pageCount");
         j++;
         img.src = data[j].download_url;
+        page.textContent = `Page ${j + 1} of ${data.length}`;
       });
 
       const buttonPrev = document.getElementById("buttonPrev");
       buttonPrev.addEventListener("click", function () {
         const img = document.getElementById("image-viewer-img");
+        const page = document.getElementById("pageCount");
         j--;
         img.src = data[j].download_url;
+        page.textContent = `Page ${j + 1} of ${data.length}`;
       });
 
       const buttonClose = document.getElementById("buttonClose");
