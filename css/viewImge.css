@@ -13,9 +13,37 @@
   flex-direction: column-reverse;
 }
 
-.view-image-container > img {
+.image-row-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-row-wrapper > img {
   width: auto;
-  height: 70%;
+  height: 70vh;
+  max-width: 70vw;
+  object-fit: cover;
+}
+
+.image-row-wrapper > button {
+  border: none;
+  background-color: unset;
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-row-wrapper > button:hover {
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .view-image-container > button {
@@ -37,3 +65,42 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+#buttonPrev {
+  position: relative;
+  background-color: black;
+  margin: 20px;
+  height: 10vh;
+}
+
+#buttonNext {
+  position: relative;
+  background-color: black;
+  margin: 20px;
+  height: 10vh;
+  position: relative;
+}
+
+/* #buttonNext:hover {
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+#buttonPrev:hover {
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+  from {
+    right: 70px;
+  }
+  to {
+    right: 50px;
+  }
+} */

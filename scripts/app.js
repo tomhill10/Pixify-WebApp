@@ -8,15 +8,13 @@ const body = document.getElementById("body");
 const html = document.getElementById("html");
 
 const loadSubPage = document.getElementsByClassName("subPage");
-let pictures = await fetchData("https://picsum.photos/v2/list");
-console.log(pictures);
 
 function app() {
   const app = document.createElement("div");
   app.className = `app-main`;
   app.innerHTML = header();
   app.innerHTML = banner();
-  app.innerHTML = subPage(pictures);
+  app.innerHTML = subPage();
   app.innerHTML = form();
 }
 
@@ -39,7 +37,3 @@ body.addEventListener("scroll", (event) => {
     console.log("scrolled");
   }
 });
-
-// window.addEventListener("scroll", (event) => {
-//   console.log(window.innerHeight);
-// });

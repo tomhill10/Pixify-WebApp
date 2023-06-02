@@ -12,10 +12,7 @@ function subPage(data) {
 `;
   body.appendChild(subPage);
   const subContainer = document.getElementById("submissions-container");
-  for (let i = 0; i < 30; i++) {
-    let index = getRandomNumber();
-    subCard(index, subContainer);
-  }
+  subCard(subContainer);
 }
 
 export { subPage };
