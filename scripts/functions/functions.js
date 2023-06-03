@@ -85,40 +85,6 @@ function endOfPagesButtonDisable(input, data) {
   }
 }
 
-function darkModeToggle(mode) {
-  const r = document.querySelector(":root");
-  const c = document.getElementsByClassName("subCard");
-  const f = document.getElementById("form-container");
-  console.log(mode);
-  if (mode == 1) {
-    r.style.setProperty("--color-main", "#000000");
-    r.style.setProperty("--color-secondary", "#7bffe9");
-    r.style.setProperty("--color-text-main", "#000000");
-    r.style.setProperty("--color-text-secondary", "#ffffff");
-    r.style.setProperty("--color-background", "#2a3b49");
-    r.style.setProperty("--color-background-secondary", "#2a3b49");
-    r.style.setProperty("--color-background-toggle", "#2a3b49");
-    for (const cc of c) {
-      cc.style.boxShadow = "5px 5px 5px 1px rgb(224, 224, 224)";
-    }
-    console.log(mode);
-    return 1;
-  } else {
-    r.style.setProperty("--color-main", "#ffffff");
-    r.style.setProperty("--color-secondary", "#7bffe9");
-    r.style.setProperty("--color-text-main", "#ffffff");
-    r.style.setProperty("--color-text-secondary", "#000000");
-    r.style.setProperty("--color-background", "#2a3b49");
-    r.style.setProperty("--color-background-secondary", "#2a3b49");
-    r.style.setProperty("--color-background-toggle", "#2a3b49");
-    for (const cc of c) {
-      cc.style.boxShadow = "5px 5px 1px 1px rgb(0, 0, 0)";
-    }
-    console.log(mode);
-    return 0;
-  }
-}
-
 export {
   getRandomNumber,
   subPageChange,
@@ -127,5 +93,4 @@ export {
   aboutPageChangeButton,
   addOneToNumber,
   endOfPagesButtonDisable,
-  darkModeToggle,
 };

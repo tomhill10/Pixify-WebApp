@@ -14,3 +14,7 @@ body {
   overflow-x: hidden;
   width: 100vw;
 }
+
+* {
+  transition: 0.2s;
+}

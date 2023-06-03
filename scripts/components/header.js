@@ -1,7 +1,6 @@
 import {
   aboutPageChange,
   aboutPageChangeButton,
-  darkModeToggle,
 } from "../functions/functions.js";
 function header() {
   const header = document.createElement("header");
