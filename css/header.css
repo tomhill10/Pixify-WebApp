@@ -9,7 +9,7 @@
   align-items: center;
   padding: 0 1vw;
   position: fixed;
-  z-index: 1;
+  z-index: 7;
 }
 
 .header-logo {
@@ -40,10 +40,15 @@
   line-height: 20px;
   text-align: center;
   text-decoration: none;
-  color: var(--color-text-secondary);
+  color: white;
 }
 
 .header-main > nav > a:hover {
   color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.header-main > nav > i {
+  color: white;
   cursor: pointer;
 }

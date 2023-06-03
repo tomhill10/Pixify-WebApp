@@ -4,9 +4,13 @@
   --color-text-main: #000000;
   --color-text-secondary: #ffffff;
   --color-background: #2a3b49;
-  --color-background-secondary: whitesmoke;
+  --color-background-toggle: whitesmoke;
+  --color-text-toggleDark: white;
+  --color-text-toggleLight: black;
 }
 
 body {
   background-color: var(--color-background);
+  overflow-x: hidden;
+  width: 100vw;
 }

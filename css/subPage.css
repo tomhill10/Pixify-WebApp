@@ -1,7 +1,6 @@
 .subPage-container {
-  margin-top: 20px;
-  background-color: var(--color-background-secondary);
-  min-height: 100vh;
+  background-color: var(--color-background-toggle);
+  min-height: calc(100vh - 60px);
   height: auto;
   width: 100%;
   padding: 70px 2vw;
@@ -34,7 +33,7 @@
 }
 
 .subCard {
-  background-color: var(--color-text-secondary);
+  background-color: var(--color-background-toggle);
   width: 25vw;
   height: calc(25vw - 5vw);
   gap: 20px;
@@ -107,7 +106,7 @@
 }
 
 .form-container > h1 {
-  color: var(--color-text-secondary);
+  color: white;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -137,6 +136,7 @@
 .form > button {
   display: flex;
   justify-content: center;
+  font-family: "Montserrat";
   align-items: center;
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid var(--color-secondary);

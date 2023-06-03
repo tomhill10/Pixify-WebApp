@@ -2,7 +2,7 @@
   width: 100%;
   height: calc(100vh - 60px);
   margin-top: 60px;
-  background-color: whitesmoke;
+  background-color: var(--color-background-toggle);
   position: fixed;
   top: 0;
   left: 0;
@@ -20,6 +20,7 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 44px;
+  color: var(--color-text-main);
 }
 
 .view-image-container .image-row-wrapper {
@@ -31,7 +32,7 @@
 
 .view-image-container > img {
   width: auto;
-  height: 70vh;
+  height: 60vh;
   max-width: 70vw;
   object-fit: cover;
 }
@@ -59,26 +60,11 @@
   color: white;
 }
 
-/* #buttonNext:hover {
-  animation-name: slide;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+.view-image-container > p {
+  color: var(--color-text-main);
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
 }
-#buttonPrev:hover {
-  animation-name: slide;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-}
-
-@keyframes slide {
-  from {
-    right: 70px;
-  }
-  to {
-    right: 50px;
-  }
-} */
