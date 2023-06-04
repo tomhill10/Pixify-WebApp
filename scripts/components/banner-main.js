@@ -7,12 +7,12 @@ function banner() {
   banner.innerHTML = ` <img src="https://picsum.photos/seed/${getRandomNumber()}/1920/1080" alt="picture" />
      <div class="pop-up">
        <img
-         src="../resources/svg/Join our photography contest and showcase your talent to the world! Immerse yourself in a community of photographers, where creativity and passion come together. Share your best shots, be inspired by others, and have a chance to win amazing prizes. En.svg"
+         src="./resources/svg/Join our photography contest and showcase your talent to the world! Immerse yourself in a community of photographers, where creativity and passion come together. Share your best shots, be inspired by others, and have a chance to win amazing prizes. En.svg"
          alt=""
        />
      </div>
      <button class="submitButton subPage" id="submitButton">
-       <img src="../resources/svg/SUBMIT NOW.svg" alt="submit" />
+       <img src="./resources/svg/SUBMIT NOW.svg" alt="submit" />
      </button>
 `;
   body.appendChild(banner);
